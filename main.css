@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .label {
+    @apply text-gray-2 text-[12px] font-semibold block;
+  }
+
+  .input {
+    @apply border rounded-xl border-gray-3 placeholder:text-base placeholder:text-gray-3 placeholder:font-semibold mt-[7px] py-4 ps-[50px] w-[456px];
+  }
+
+  .placeholder-icon {
+    @apply text-2xl text-gray-3 absolute ms-[10px] mt-[23px];
+  }
+}

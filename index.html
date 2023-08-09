@@ -5,6 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout Page</title>
     <link rel="stylesheet" href="./main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body class="font-montserrat">
+    <main>
+      <section class="flex justify-center">
+        <form class="mt-16 flex flex-wrap">
+          <h1 class="text-dark-1 text-4xl font-semibold basis-full">
+            Checkout
+          </h1>
+          <div class="mt-12">
+            <fieldset>
+              <legend class="text-lg text-gray-1 font-semibold">
+                Contact Information
+              </legend>
+              <label class="label mt-3" for="email" class="block">E-mail</label>
+              <i class="material-icons-round placeholder-icon">email</i>
+              <input
+                class="input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email..."
+              />
+              <label class="label mt-5" for="phone">Phone</label>
+              <i class="material-icons-round placeholder-icon">call</i>
+              <input
+                class="input"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone..."
+                required
+              />
+            </fieldset>
+            <button class="mt-6" type="submit">Continue</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
