@@ -8,8 +8,12 @@
     @apply text-gray-2 text-[12px] font-semibold block;
   }
 
+  .legend {
+    @apply text-lg text-gray-1 font-semibold;
+  }
+
   .input {
-    @apply border rounded-xl border-gray-3 placeholder:text-base placeholder:text-gray-3 placeholder:font-semibold mt-[7px] py-4 ps-[50px] w-[456px];
+    @apply border rounded-xl border-gray-3 text-gray-1 text-base font-semibold placeholder:text-base placeholder:text-gray-3 placeholder:font-semibold mt-[7px] py-4 ps-[50px] w-[456px];
   }
 
   .placeholder-icon {

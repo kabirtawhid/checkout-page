@@ -19,9 +19,7 @@
           </h1>
           <div class="mt-12">
             <fieldset>
-              <legend class="text-lg text-gray-1 font-semibold">
-                Contact Information
-              </legend>
+              <legend class="legend">Contact Information</legend>
               <label class="label mt-3" for="email" class="block">E-mail</label>
               <i class="material-icons-round placeholder-icon">email</i>
               <input
@@ -40,6 +38,32 @@
                 id="phone"
                 placeholder="Enter your phone..."
                 required
+              />
+            </fieldset>
+
+            <fieldset class="mt-14">
+              <legend class="legend">Shipping Address</legend>
+              <label class="label mt-[15px]" for="name">Full Name</label>
+              <i class="material-icons-round placeholder-icon"
+                >account_circle</i
+              >
+              <input
+                class="input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Full Name..."
+                value=""
+              />
+
+              <label for="adress" class="label mt-4">Address</label>
+              <i class="material-icons-round placeholder-icon">home</i>
+              <input
+                type="text"
+                name="adress"
+                id="adress"
+                placeholder="Your adress..."
+                class="input"
               />
             </fieldset>
             <button class="mt-6" type="submit">Continue</button>
