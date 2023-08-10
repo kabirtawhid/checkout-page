@@ -13,10 +13,22 @@
   }
 
   .input {
-    @apply border rounded-xl border-gray-3 text-gray-1 text-base font-semibold placeholder:text-base placeholder:text-gray-3 placeholder:font-semibold mt-[7px] py-4 ps-[50px] w-[456px];
+    @apply border rounded-xl border-gray-3 text-gray-1 text-base font-semibold placeholder:text-base placeholder:text-gray-3 placeholder:font-semibold mt-[7px] py-4 ps-[50px] w-full;
   }
 
   .placeholder-icon {
     @apply text-2xl text-gray-3 absolute ms-[10px] mt-[23px];
   }
+}
+
+select.input {
+  background-image: url('data:image/svg+xml;utf-8,<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect width="21" height="21" rx="4" fill="rgb(224,224,224)"/> <path d="M6.48375 7.25812L10.5 11.2656L14.5163 7.25812L15.75 8.49187L10.5 13.7419L5.25 8.49187L6.48375 7.25812Z" fill="rgb(130,130,130)"/> </svg>');
+
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 26px 26px;
+  padding-right: 2.5rem;
+  -webkit-print-color-adjust: exact;
+  -moz-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
