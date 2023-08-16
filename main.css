@@ -5,19 +5,23 @@
 
 @layer components {
   .label {
-    @apply text-gray-2 text-[12px] font-semibold block;
+    @apply text-gray-2 text-[10px] md:text-[12px] font-semibold block;
   }
 
   .legend {
-    @apply text-lg text-gray-1 font-semibold;
+    @apply text-sm md:text-lg text-gray-1 font-semibold;
   }
 
   .input {
-    @apply border rounded-xl border-gray-3 text-gray-1 text-base font-semibold placeholder:text-base placeholder:text-gray-3 placeholder:font-semibold mt-[7px] py-4 ps-[50px] w-full;
+    @apply border rounded-xl border-gray-3 text-gray-1 text-[12px] md:text-base font-semibold placeholder:text-[12px] md:placeholder:text-base placeholder:text-gray-3 placeholder:font-semibold mt-[7px] py-3 md:py-4 ps-[35px] md:ps-[50px] w-full;
   }
 
-  .placeholder-icon {
-    @apply text-2xl text-gray-3 absolute ms-[10px] mt-[23px];
+  .material-icons-round.placeholder-icon {
+    @apply text-[18px] md:text-[24px] text-gray-3 absolute ms-[10px] mt-[24px] md:mt-[23px];
+  }
+
+  .material-icons-round.math {
+    @apply text-[18px] md:text-[21.2px] h-[18px] md:h-[21.2px];
   }
 }
 

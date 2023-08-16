@@ -1,6 +1,6 @@
 let checkoutItemsData = [
   {
-    id: "vitage-backbag",
+    id: "vintage-backbag",
     name: "Vintage Backbag",
     newPrice: 54.99,
     originalPrice: 94.99,
