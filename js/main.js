@@ -9,14 +9,14 @@ let generateCart = () => {
       let search = basket.find((y) => y.id === id) || [];
 
       return `
-<div class="flex gap-3  md:gap-5 max-md:justify-between" id=${id}>
-  <img class="min-h-[120px] h-[40vw] md:h-[136px] rounded-[13px]" src="/assets/${photo}">
+<div class="flex gap-3 sm:gap-5 " id=${id}>
+  <img class="min-h-[120px] max-h-[126px] h-[40vw] md:h-[136px] rounded-[13px]" src="/assets/${photo}">
   <div class="flex flex-col justify-between">
     <div>
-      <h3 class="text-[13px] md:text-lg text-dark-1 font-semibold">${name}</h3>
+      <h3 class="text-[13px] sm:text-[14px]  md:text-lg text-dark-1 font-semibold">${name}</h3>
       <p class="mt-[6px] flex items-center"><span class="text-orange text-sm md:text-base font-semibold me-[18px]">$${newPrice}</span><s class=" text-[10px] md:text-[12px] text-dark-1 font-semibold">$${originalPrice}</s></p>
     </div>
-    <div class="flex justify-between items-center w-[112px] md:w-[134px] h-[49px] md:h-[54px] py-[14px] px-[12px] border border-gray-3 rounded-xl">
+    <div class="flex justify-between items-center w-[112px] sm:w-[122px] md:w-[134px] h-[49px]  md:h-[54px] py-[14px] px-[12px] border border-gray-3 rounded-xl">
       <i class="material-icons-round math text-gray-3  rounded bg-[#e0e0e0] cursor-pointer" onclick="decrement('${id}')" >remove</i>
       <p class="font-semibold text-gray-1">${search.quantity || 0}</p>
       <i class="material-icons-round math text-gray-3 text-[21.2px] rounded bg-[#e0e0e0] cursor-pointer" onclick="increment('${id}')" >add</i>

@@ -14,6 +14,9 @@ module.exports = {
         "gray-3": "#828282",
         orange: "#F2994A",
       },
+      screens: {
+        sm: "360px",
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],
