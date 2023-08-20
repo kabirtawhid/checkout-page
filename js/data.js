@@ -16,3 +16,7 @@ let checkoutItemsData = [
 ];
 
 let shippingCost = 19;
+
+export {
+  checkoutItemsData,
+};

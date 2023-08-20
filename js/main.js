@@ -1,3 +1,5 @@
+import { checkoutItemsData } from "./data.js";
+
 let cart = document.getElementById("cart");
 
 let basket = JSON.parse(localStorage.getItem("data")) || [];
@@ -10,7 +12,7 @@ let generateCart = () => {
 
       return `
 <div class="flex gap-3 sm:gap-5 " id=${id}>
-  <img class="min-h-[120px] max-h-[126px] sm-2:max-h-[136px] h-[40vw]  rounded-[13px]" src="/assets/${photo}">
+  <img class="min-h-[120px] max-h-[126px] sm-2:max-h-[136px] h-[40vw]  rounded-[13px]" src="/${photo}">
   <div class="flex flex-col justify-between">
     <div>
       <h3 class="text-[13px] sm:text-[14px]  md:text-lg text-dark-1 font-semibold">${name}</h3>
